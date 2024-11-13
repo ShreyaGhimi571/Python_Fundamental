@@ -1,13 +1,13 @@
 from operations import temperature
 
-d_f=float(input("Enter the tempreture"))
-opt=input("Enter C if the entered value is Celcius\nEnter F if the entered value is Farenheit: ")
+d_f=float(input("Enter the temperature"))
+opt=input("Is the entered temperature farenheit or degree: ")
 
 
 temp=temperature(d_f)
-if opt.lower()== "c":
+if opt.lower()== "celcius":
     temp.Celcius()
-elif opt.lower()=="f":
+elif opt.lower()=="farenheit":
     temp.Farenheit()
 else:
     print("Invalid Input")
